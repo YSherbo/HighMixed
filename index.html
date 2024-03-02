@@ -2,7 +2,6 @@
 <html lang="en-us">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity WebGL Player | HighMixed</title>
     <meta name="description" content="">
@@ -11,7 +10,7 @@
   </head>
   <body>
     <div id="unity-container">
-      <div id="unity-canvas-container" style="width: 100%; height: 100%;">
+      <div id="unity-canvas-container">
         <canvas id="unity-canvas" style="width: 100%; height: 100%;"></canvas>
       </div>
       <div id="unity-loading-bar">
@@ -30,11 +29,11 @@
     </div>
     <script>
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/FC8096A9809669C2.loader.js";
+      var loaderUrl = buildUrl + "/BUILD 1.loader.js";
       var config = {
-        dataUrl: buildUrl + "/FC8096A9809669C2.data",
-        frameworkUrl: buildUrl + "/FC8096A9809669C2.framework.js",
-        codeUrl: buildUrl + "/FC8096A9809669C2.wasm",
+        dataUrl: buildUrl + "/BUILD 1.data",
+        frameworkUrl: buildUrl + "/BUILD 1.framework.js",
+        codeUrl: buildUrl + "/BUILD 1.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "YSherbo",
         productName: "HighMixed",
@@ -50,7 +49,9 @@
       var unityInstance = null;
       
 
-      canvas.style.background = "url('" + buildUrl + "/FC8096A9809669C2.jpg') center / cover";
+      canvasContainer.style.width = "960px";
+      canvasContainer.style.height = "600px";
+      canvas.style.background = "url('" + buildUrl + "/BUILD 1.jpg') center / cover";
       loadingBar.style.display = "block";
 
       var script = document.createElement("script");
