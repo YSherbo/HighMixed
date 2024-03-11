@@ -25,5 +25,5 @@ Send Emails With Ease
 <h3>Blocks</h3>
 A Game
 <h3>Move Windows</h3>
-<h3>Expand Windows Coming soon</h3>
+<h3>Expand Windows</h3>
 <h3>Chess Coming Soon</h3>
